@@ -20,7 +20,7 @@
 #include <sourcemod>
 #include <sdktools>
 #include <sdkhooks>
-#include <voiceannounce_ex>
+#include <Voice>
 
 new g_unClientSprite[MAXPLAYERS+1]={INVALID_ENT_REFERENCE,...};
 
