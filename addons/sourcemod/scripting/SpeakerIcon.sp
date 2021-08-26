@@ -122,7 +122,7 @@ public Action:OnTrasnmit(entity, client)
 	return Plugin_Continue;
 }
 
-public OnClientSpeakingEx(client)
+public void OnClientSpeakingStart(int client)
 {
 	if(!IsClientInGame(client) || !IsPlayerAlive(client))
 		return;
@@ -130,7 +130,7 @@ public OnClientSpeakingEx(client)
 	CreateSprite(client);
 }
 
-public OnClientSpeakingEnd(client)
+public void OnClientSpeakingEnd(int client)
 {
 	ResetSprite(client);
 }
